@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a> Home</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Contact</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>About</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">Hockey’s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <a class="btn">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner -->
+        <div>
+            <div class="carousel w-full h-[600px]">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="hero h-auto" style="background-image: url(Images/1.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md">
+                                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                                    excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                <button class="btn btn-primary">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen" style="background-image: url(Images/1.0.jpg);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md">
+                                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                                    excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                <button class="btn btn-primary">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </header>
+    <main>
+<section>
+    <h3 class="text-5xl font-semibold text-center">Professional Hockeys Club</h3>
+    <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+    <div class="grid grid-cols-1 lg:grid-cols-4">
+        <div>
+            <div class="radial-progress text-primary" style="--value:70;" role="progressbar">87%</div>
+        </div>
+        <div>
+            <div class="radial-progress text-primary" style="--value:70;" role="progressbar">95%</div>
+        </div>
+        <div>
+            <div class="radial-progress text-primary" style="--value:70;" role="progressbar">90%</div>
+        </div>
+        <div>
+            <div class="radial-progress text-primary" style="--value:70;" role="progressbar">82%</div>
+        </div>
+    </div>
+</section>
+
+    </main>
+</body>
+
+</html>
