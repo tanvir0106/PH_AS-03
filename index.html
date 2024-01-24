@@ -48,7 +48,7 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <button class="btn btn-ghost btn-circle">
+                    <button class="btn btn-ghost btn-circle hidden lg:flex">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -61,47 +61,45 @@
         </nav>
 
         <!-- banner -->
-        <div>
-            <div class="carousel w-full h-[600px]">
-                <div id="slide1" class="carousel-item relative w-full h-full">
-                    <div class="hero h-auto" style="background-image: url(Images/1.png);">
-                        <div class="hero-overlay bg-opacity-60"></div>
-                        <div class="hero-content text-center text-neutral-content">
-                            <div class="max-w-md">
-                                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-                                    excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                                <button class="btn btn-primary">Get Started</button>
-                            </div>
-                        </div>
-                    </div>
+        <div class="lg:relative">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-                <div id="slide2" class="carousel-item relative w-full h-full">
-                    <div class="hero min-h-screen" style="background-image: url(Images/1.0.jpg);">
-                        <div class="hero-overlay bg-opacity-60"></div>
-                        <div class="hero-content text-center text-neutral-content">
-                            <div class="max-w-md">
-                                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-                                    excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                                <button class="btn btn-primary">Get Started</button>
-                            </div>
-                        </div>
-                    </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/1.0.jpg" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle">❮</a>
                         <a href="#slide1" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-
+                <!-- <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div> -->
+            </div>
+            <div class="lg:absolute lg:bottom-10 lg:right-5 bg-black p-5 rounded-xl lg:max-w-md">
+                <h1 class="text-xl text-center text-white font-semibold"> Meet all the heroes from the field</h1>
+                <p class="text-center text-sm text-[#ffffff99]">Hockey"s Bnagaladesh"s top-1 hockey club. We are givieg you to meet with our super team.So don't miss thia opportunity </p>
             </div>
         </div>
+
+        </div>
     </header>
-    <main class="px-2 lg:px-24">
+    <main class="px-2 lg:px-10">
         <!-- Professional Hockeys Club -->
         <section class="mt-24">
             <div class="border-dashed border-4 border-x-0 mb-10">
@@ -162,7 +160,7 @@
                             <p class="mb-5"> The program is designed for ages 2-6 to aid in the development,
                                 coordination and socialization of your skater. Bring your skates or get used to the ice
                                 in your favorite pair of snow boots.</p>
-                            <button class="btn btn-primary">Register Now!</button>
+                            <button class="btn text-white bg-red-600 border-black">Register Now!</button>
                         </div>
                     </div>
                 </div>
@@ -176,7 +174,7 @@
                             <p class="mb-5">For ages 11 to 17. Previous skating experience is recommended. This is a
                                 skills-based class designed for players with little to no hockey experience that will
                                 focus on developing basic hockey fundamentals and introducing game concepts.</p>
-                            <button class="btn btn-primary">Register Now!</button>
+                            <button class="btn bg-red-600 text-white border-black">Register Now!</button>
                         </div>
                     </div>
                 </div>
@@ -190,7 +188,7 @@
                             <p class="mb-5">Many professional hockey teams have structured programs for developing young
                                 players and preparing them for the NHL. These programs typically involve training camps,
                                 tournaments, and assignments to minor league teams.</p>
-                            <button class="btn btn-primary">Register Now!</button>
+                            <button class="btn bg-red-600 text-white border-black">Register Now!</button>
                         </div>
                     </div>
                 </div>
@@ -210,8 +208,10 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
                 <!-- item-1 -->
-                <div class="card card-side bg-base-100 shadow-xl">
-                    <figure><img src="Images/5.png"></figure>
+                <div class="card card-side bg-base-100 flex flex-col lg:flex-row shadow-xl">
+                    <div>
+                        <figure><img src="Images/5.png"></figure>
+                    </div>
                     <div class="card-body">
                         <div>
                             <ul class="flex gap-x-4">
@@ -233,7 +233,7 @@
                     </div>
                 </div>
                 <!-- item-2 -->
-                <div class="card card-side bg-base-100 shadow-xl">
+                <div class="card card-side bg-base-100 shadow-xl  flex flex-col lg:flex-row ">
                     <figure><img src="Images/6.png"></figure>
                     <div class="card-body">
                         <div>
@@ -256,7 +256,7 @@
                     </div>
                 </div>
                 <!-- item -3 -->
-                <div class="card card-side bg-base-100 shadow-xl">
+                <div class="card card-side bg-base-100 shadow-xl   flex flex-col lg:flex-row ">
                     <figure><img src="Images/7.png"></figure>
                     <div class="card-body">
                         <div>
@@ -279,7 +279,7 @@
                     </div>
                 </div>
                 <!-- ITEM-04 -->
-                <div class="card card-side bg-base-100 shadow-xl">
+                <div class="card card-side bg-base-100 shadow-xl    flex flex-col lg:flex-row">
                     <figure><img src="Images/8.png"></figure>
                     <div class="card-body">
                         <div>
@@ -302,7 +302,7 @@
                     </div>
                 </div>
                 <!-- ITEM-5 -->
-                <div class="card card-side bg-base-100 shadow-xl">
+                <div class="card card-side bg-base-100 shadow-xl    flex flex-col lg:flex-row">
                     <figure><img src="Images/9.png"></figure>
                     <div class="card-body">
                         <div>
@@ -325,7 +325,7 @@
                     </div>
                 </div>
                 <!-- ITEM--6 -->
-                <div class="card card-side bg-base-100 shadow-xl">
+                <div class="card card-side bg-base-100 shadow-xl   flex flex-col lg:flex-row">
                     <figure><img src="Images/10.png"></figure>
                     <div class="card-body">
                         <div>
@@ -351,10 +351,8 @@
 
             </div>
         </section>
-        <!--  -->
-        <section>
+        <!--  Clients Question  -->
 
-        </section>
         <section class="mt-24">
             <div class="border-dashed border-4 border-x-0 mb m-10">
                 <h1 class=" text-5xl font-semibold text-center">
@@ -402,20 +400,20 @@
                     </div>
                 </div>
         </section>
-        <!--  -->
+        <!-- form -->
         <section class="mt-24">
 
-            <div class="container">
+            <div class="container ">
                 <!-- HEADDER -->
-                <div class="border-x-0 border-dashed border-gray-600 border-4">
+                <div class="border-x-0 border-dashed  border-4">
                     <h1 class="text-5xl font-semibold text-center">Get In Touch</h1>
                     <p class="my-5 text-center">Sign up and stay updated with the latest product launches and offers!
                     </p>
                 </div>
                 <!-- FORM BODY -->
-                <div class="grid lg:grid-cols-3 mt-5">
+                <div class="flex flex-col lg:flex-row my-10">
                     <!-- contact-INFO -->
-                    <div class="flex flex-col gap-6 mb-4 mx-auto">
+                    <div class="flex flex-col gap-6 mb-4 mx-auto my-auto">
                         <!-- PHONE -->
                         <div class="card w-96 bg-[#DFC5AC] text-black">
                             <div class="card-body">
@@ -447,7 +445,7 @@
 
                     </div>
                     <!-- FORM -->
-                    <div class="lg:col-span-2 grid lg:grid-cols-2 gap-4">
+                    <div class=" grid grid-cols-1 lg:grid-cols-2 gap-4">
                         <!-- YOUR-NAME -->
                         <div>
                             <label class="form-control w-full">
@@ -497,7 +495,7 @@
                             </label>
                         </div>
                         <!--  Message -->
-                        <div class="col-span-2">
+                        <div class="lg:col-span-2">
                             <label class="form-control w-full ">
                                 <div class="label">
                                     <span class="label-text text-2xl font-semibold "> Message</span>
@@ -508,7 +506,7 @@
 
                             </label>
                         </div>
-                        <div class="col-span-2">
+                        <div class="lg:col-span-2">
                             <button class="btn bg-red-600 text-white w-full text-2xl" type="submit"> Send
                                 Message</button>
                         </div>
@@ -521,14 +519,18 @@
 
         </section>
         <section>
-            <h1>Social Media</h1>
-            <div class="flex">
-                <ul>
-                    <li><a></a></li>
-                    <li>a</li>
-                    <li></li>
-                    <li></li>
-                </ul>
+
+            <div class="text-center my-10 bg-amber-50 p-5 shadow-md border-amber-700 rounded-2xl">
+                <h1 class="text-3xl font-semibold mb-5">Social Media</h1>
+                <div class="flex text-center">
+                    <ul class="flex gap-5 text-center m-auto">
+                        <li><a class="link link-hover"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+                        <li><a class="link link-hover"><i class="fa-brands fa-facebook-f fa-2xl"></i></a></li>
+                        <li><a class="link link-hover"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                        <li><a class="link link-hover"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+
+                    </ul>
+                </div>
             </div>
 
         </section>
@@ -554,7 +556,7 @@
             <a class="link link-hover m-auto lg:m-0"> Legal notice</a>
         </nav>
         <nav class="text-center justify-center items-center text-cente lg:mx-0 mx-auto">
-            <header class="footer-title text-[#FFF] text-xl m-auto lg:m-0 " text-xl m-auto lg:m-0 >Support</header>
+            <header class="footer-title text-[#FFF] text-xl m-auto lg:m-0 " text-xl m-auto lg:m-0>Support</header>
             <a class="link link-hover m-auto lg:m-0">Help centre</a>
             <a class="link link-hover m-auto lg:m-0">Faq</a>
             <a class="link link-hover m-auto lg:m-0">Ticket support</a>
@@ -569,8 +571,8 @@
             <a class="link link-hover m-auto lg:m-0">Hockeys for adults</a>
         </nav>
 
-      
-            </div>
+
+        </div>
         </nav>
     </footer>
 </body>
